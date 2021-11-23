@@ -1,0 +1,42 @@
+.grilla {
+  display: grid;
+  grid-template: repeat(4, minmax(10px, 1fr)) / repeat(12, minmax(10px, 1fr));
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "s s c c c c c c c c c c"
+    "s s c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
+.grilla > div {
+  border: 4px solid #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  grid-area: h;
+}
+
+.sidebar {
+  grid-area: s;
+}
+
+.content {
+  grid-area: c;
+}
+
+.footer {
+  grid-area: f;
+}
+
+@media only screen and (max-width: 1000px) {
+  .grilla {
+    grid-template: repeat(auto-fit, minmax(10px, 1fr)) / 1fr;
+    grid-template-areas:
+      "h"
+      "s"
+      "c"
+      "f";
+  }
+}

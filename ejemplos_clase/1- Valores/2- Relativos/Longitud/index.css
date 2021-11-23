@@ -1,0 +1,12 @@
+.emElement {
+  width: 7em;
+  height: 7em;
+  background-color: blueviolet;
+}
+
+.remElement {
+  width: 7rem;
+  height: 7rem;
+  background-color: coral;
+  margin: 2rem;
+}

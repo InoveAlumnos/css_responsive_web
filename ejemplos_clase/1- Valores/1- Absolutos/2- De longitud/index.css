@@ -1,0 +1,12 @@
+.centimetros {
+  width: 2.5cm;
+  height: 2.5cm;
+  background-color: yellowgreen;
+  margin: 1cm;
+}
+.pixeles {
+  background-color: darkred;
+  width: 100px;
+  height: 100px;
+  margin: 35px;
+}

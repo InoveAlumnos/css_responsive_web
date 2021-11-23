@@ -1,0 +1,17 @@
+.container {
+  border: 4px solid orange;
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  border-radius: 20px;
+  padding: 20px;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.children {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border-radius: 20px;
+}

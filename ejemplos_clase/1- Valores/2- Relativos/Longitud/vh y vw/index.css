@@ -1,0 +1,23 @@
+/* Se eliminan todos los margenes y paddings, que se incluyen por defecto para poder apreciar como el elemento ocupa correctamente todo el espacio indicado */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Se genera un elemento padre para poder centrar el elemento "viewHeight", esto se hace unicamente para el ejemplo de "vh" */
+.father {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewHeight {
+  height: 100vh;
+  width: 100px;
+  background-color: blue;
+}
+
+.viewWidth {
+  height: 100px;
+  width: 100%;
+  background-color: darkslateblue;
+}

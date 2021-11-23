@@ -1,0 +1,13 @@
+.grilla {
+  display: grid;
+  grid-template: repeat(2, minmax(10px, 100px)) / repeat(
+      auto-fit,
+      minmax(100px, 1fr)
+    );
+}
+
+.grilla > div {
+  border: 4px solid #333;
+  padding: 20px;
+  text-align: center;
+}

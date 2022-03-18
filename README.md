@@ -3,7 +3,7 @@ Inove Escuela de Código\
 info@inove.com.ar\
 Web: [Inove](http://inove.com.ar)
 
-# ¡Introducción a estilos con CSS! [Web]
+# ¡Introducción CSS responsivo! [Web]
 En este repositorio encontrarán las siguientes carpetas:
 
 __Ejemplos que el profesor mostrará en clase__\

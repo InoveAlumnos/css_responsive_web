@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #4e4e4e;
+  /* Cambiar la fuente de la tipografia */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh; /* can also use viewport units (height: 100vh) */
+  display: flex; /* displays flex-items (children) inline */
+  flex-direction: column; /* stacks them vertically */
+}
+
+/* ------- Header style ------- */
+
+header {
+  background-color: #2a2a2a;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* fila de elementos del header */
+/* formado por una lista de elementos (ul) */ 
+header > nav > ul {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title-nav-bar-top {
+  font-size: 0.9rem;
+  padding: 10px;
+  margin-left: 3em;
+  color: white;
+}
+
+/* ------- Main style (contenido principal) ------- */
+main {
+  background-image: url(../images/fondo.jpg);
+  flex: 1; /* toma el espacio restante de la pantalla */
+  overflow: auto; /* activar scroll */
+}
+
+/* ------- Article style ------- */
+/*
+- Alinear todos los elementos unos encima de otros (flex-direction:column)
+- Se centraron los elementos en el eje horizontal/principal (justify-content center)
+- Se centraron los elementos en el eje vertical/secondario (align-items center)
+*/
+article {
+  padding-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.titulo > h1 {
+  font-size: 40px;
+}
+
+.titulo > h3 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.descripcion {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.descripcion > p {
+  color: gray;
+}
+
+.descripcion > a {
+  text-decoration: none;
+  color: rgb(20, 101, 182);
+  font-size: 20px;
+}
+
+/* ------- Footer style ------- */
+
+footer {
+  height: 60px;
+  background-color: #2a2a2a;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h2 {
+  color: white;
+  text-align: center;
+}
+
+footer div {
+  padding: 25px;
+}
+
+footer i {
+  color: white;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  article > figure > img {
+    width: 350px;
+  }
+}

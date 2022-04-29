@@ -1,16 +1,10 @@
 body {
   margin: 0;
-  height: 100vh; /* can also use viewport units (height: 100vh) */
-  display: flex; /* displays flex-items (children) inline */
-  flex-direction: column; /* stacks them vertically */
+  height: 100vh; /* podría ser también como viewport (height: 100vh) */
+  display: flex;
+  flex-direction: column; /* organizar todo en columnas */
 }
   
-#container {
-  display: flex; /* displays flex-items (children) inline */
-  flex-direction: column; /* stacks them vertically */
-  height: 100%; /* needs to take the parents height, alternative: body {display: flex} */
-}
-
 /* ------- Header style ------- */
 header {
   background: #f88;
@@ -34,8 +28,8 @@ main {
 }
 
 section {
-  height: 100%; /* cada div ocupa 100% del main */
-  overflow: auto; /* recomendado */
+  height: 100%; /* cada seccion ocupa 100% del main */
+  overflow: auto; /* recomendado para que las secciones no se superpongan */
   border-bottom: 1px solid;
   background: lightgreen;
 }

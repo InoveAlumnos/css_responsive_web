@@ -13,10 +13,9 @@
 }
 
 body {
-  margin: 0;
-  height: 100vh; /* can also use viewport units (height: 100vh) */
-  display: flex; /* displays flex-items (children) inline */
-  flex-direction: column; /* stacks them vertically */
+  height: 100vh; /* ocupar toda la pantalla */
+  display: flex;
+  flex-direction: column; /* ordenar las secciones en columnas */
 }
 
 /* ------- Header style ------- */

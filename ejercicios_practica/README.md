@@ -4,7 +4,7 @@ Para esta tarea tenemos como objetivo construir los siguientes ejemplos:
 
 # Ejercicio 1
 
-Utilice auto-fit o flex wrap para generar un ejemplo de cajas como el siguiente:
+Utilice auto-fit para generar un ejemplo de cajas como el siguiente:
 
 ![grilla_automatica](grilla_automatica.gif)
 

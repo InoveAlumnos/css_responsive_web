@@ -1,0 +1,62 @@
+/* Utilizando el selector universal (apunt a a todos)
+ para realizar el set de CSS*/
+ * {
+  /* se eliminan todos los margin por defecto */
+  margin: 0;
+  /* se eliminan todos los padding por defecto */
+  padding: 0; 
+  /* se elimina el estilo de las listas */
+  list-style-type: none;
+  /* el padding y border se consideran para calcular
+   el tamaño de la caja */
+  box-sizing: border-box;
+  /* se elimina el subrayado de los links <a> */
+  text-decoration: none
+}
+
+body {
+  display: grid;  /* Declara ante todo esta propiedad. los elementos en una columna */           
+  grid-template-rows: 100px 100px 100px 100px; /* Declara el tamaño de las filas */
+  grid-template-columns: 100px 100px 100px 100px; /* Declara el tamaño de las columnas */
+  grid-gap: 10px;  /* Declara el espacio entre columnas */
+
+  grid-template-areas: 
+  "A A A A"
+  "A A A A"
+  "B C D E";
+}
+
+.grid-item1 {
+  grid-area: A;
+  text-align: center; /* Alinea el texto a la columna */
+  border: black 5px solid; /* Declara el borde de las columnas */
+  background-color: blue; /* Declara el color de fondo */
+}
+
+.grid-item2 {
+  grid-area: B;
+  background: grey; /* Declara el color de fondo */
+  text-align: center; /* Alinea el texto a la columna */
+  border: black 5px solid; /* Declara el borde de las columnas */
+}
+
+.grid-item3 {
+  grid-area: C;
+  background: rgb(248, 47, 47); /* Declara el color de fondo */
+  text-align: center; /* Alinea el texto a la columna */
+  border: black 5px solid; /* Declara el borde de las columnas */
+}
+
+.grid-item4 {
+  grid-area: D;
+  background: rgb(47, 248, 91); /* Declara el color de fondo */
+  text-align: center; /* Alinea el texto a la columna */
+  border: black 5px solid; /* Declara el borde de las columnas */
+}
+
+.grid-item5 {
+  grid-area: E;
+  background: rgb(248, 47, 231); /* Declara el color de fondo */
+  text-align: center; /* Alinea el texto a la columna */
+  border: black 5px solid; /* Declara el borde de las columnas */
+}

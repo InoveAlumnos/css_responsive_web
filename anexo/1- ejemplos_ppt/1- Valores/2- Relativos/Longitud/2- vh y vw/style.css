@@ -1,0 +1,28 @@
+/* Se eliminan todos los margenes y paddings, que se incluyen por defecto
+ para poder apreciar como el elemento ocupa correctamente
+ todo el espacio indicado */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* La sección ocupará todo el espacio vertical 
+disponible de la pantalla */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-color: blue;
+  height: 100vh;  /* ¿qué sucede si cambiamos 100vh a 100%? */
+}
+
+/* Este elemento dentro de la sección
+ ocupará todo el espacio horitonzal (width
+ disponible en la pantalla*/
+.viewWidth {
+  height: 100px;
+  width: 100vw;
+  background-color: darkslateblue;
+  color: white;
+  font-size: 36px;
+}

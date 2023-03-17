@@ -1,0 +1,59 @@
+/* Utilizando el selector universal (apunt a a todos)
+ para realizar el set de CSS*/
+* {
+  /* se eliminan todos los margin por defecto */
+  margin: 0;
+  /* se eliminan todos los padding por defecto */
+  padding: 0; 
+  /* se elimina el estilo de las listas */
+  list-style-type: none;
+  /* el padding y border se consideran para calcular
+   el tamaño de la caja */
+  box-sizing: border-box;
+  /* se elimina el subrayado de los links <a> */
+  text-decoration: none
+}
+
+body{
+  display: grid; /* Declara ante todo esta propiedad */
+  height: 100vh; /* Declara el alto de la pagina */
+  grid-template-areas: 
+      "nav header header"
+      "nav productos publicidad"
+      "nav servicios publicidad"
+      "nav footer footer";  /* Declara el numero de columnas */
+  grid-template-rows: 100px 1fr 1fr 75px;  /* Declara el tamaño de las filas */
+  grid-template-columns: 20% 65% 15%;   /* Declara el tamaño de las columnas */
+}
+
+nav {
+  grid-area: nav; /* Declara que ese elemento va a ocupar la fila 1 */
+  background-color: yellow;  /* Declara el color de fondo */
+}
+
+header {
+  grid-area: header; /* Declara que ese elemento va a ocupar la fila 2 */
+  background-color: saddlebrown; /* Declara el color de fondo */
+  text-align: center; /* Declara que el texto va a estar centrado */
+  color: #fff; /* Declara el color del texto */
+}
+
+.seccion1 {
+  grid-area: productos;  /* Declara que ese elemento va a ocupar la fila 3 */
+  background-color: teal;
+}
+
+.seccion2 {
+  grid-area: servicios;  /* Declara que ese elemento va a ocupar la fila 4 */
+  background-color: turquoise;
+}
+
+aside {
+  grid-area: publicidad;  /* Declara que ese elemento va a ocupar la fila 5 */
+  background-color: tomato;
+}
+
+footer {
+  grid-area: footer;  /* Declara que ese elemento va a ocupar la fila 6 */
+  background-color: thistle;
+}

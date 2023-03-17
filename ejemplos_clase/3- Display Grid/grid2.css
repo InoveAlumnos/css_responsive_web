@@ -1,0 +1,26 @@
+/* Utilizando el selector universal (apunt a a todos)
+ para realizar el set de CSS*/
+* {
+  /* se eliminan todos los margin por defecto */
+  margin: 0;
+  /* se eliminan todos los padding por defecto */
+  padding: 0; 
+  /* se elimina el estilo de las listas */
+  list-style-type: none;
+  /* el padding y border se consideran para calcular
+   el tamaño de la caja */
+  box-sizing: border-box;
+  /* se elimina el subrayado de los links <a> */
+  text-decoration: none
+}
+
+.grilla {
+  display: grid;  /* Declara ante todo esta propiedad. los elementos se ordenan en columnas */
+  grid-template-columns: auto auto auto auto; /* Declara el numero de columnas */
+  grid-gap: 10px; /* Declara el espacio entre columnas y filas */
+  /* grid-template-columns: 10px 20% 65% 15%; Declara el tamaño de las columnas */
+}
+
+.grilla > div {
+  border: 2px solid black;  /* Declara el borde de las columnas */
+}

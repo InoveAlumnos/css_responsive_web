@@ -1,0 +1,85 @@
+body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 800px;
+}
+
+section {
+  width: 100%;
+  border: 1px burlywood solid;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-size: 32px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+  gap: 20px;
+}
+
+.row div {
+  min-width: 100px;
+  min-height: 100px;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------COLORES  ----------------- */
+#porNombre {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: red;
+}
+
+#porHexadecimal {
+  color: #2ae8e2;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#porRGB {
+  background-color: rgba(92, 112, 181);
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+#porGradiente {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background: linear-gradient(
+    #a40c32 10%, 
+    #9A0CA4 45%, 
+    #1A17CB 85%
+    );
+}
+
+/* ---------------------------------------------- */
+/* --------------Tamaños --------------- */
+#porPix {
+  background-color: brown;
+  width: 25px;
+}
+
+#porPorcentaje {
+  background-color: brown;
+  width: 25%;
+}
+
+#porVW {
+  background-color: brown;
+  width: 25vw;
+  overflow: visible;
+}

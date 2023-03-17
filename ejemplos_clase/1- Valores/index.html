@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Valores</title>
+</head>
+<body>
+  <section>
+    <div class="title"><u>Colores</u></div>
+    <div class="row">
+      <p>Color por nombre: red</p>
+      <div id="porNombre"></div>
+    </div>
+    <div class="row">
+      <p>Color por hexa: #2ae8e2</p>
+      <p id="porHexadecimal">Hello</p>
+    </div>
+    <div class="row">
+      <p>Color por nombre: rgba(92, 112, 181)</p>
+      <div id="porRGB"></div>
+    </div>
+    <div class="row">
+      <p>Color por nombre: background: linear-gradient(
+        #a40c32 10%, 
+        #9A0CA4 45%, 
+        #1A17CB 85%
+        );</p>
+      <div id="porGradiente"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="title"><u>Tamaño absoluto por pix</u></div>
+    <div class="row">
+      <span>
+        <p>Ancho (width) absoluto: width: 25px</p>
+        <p>Su tamaño NUNCA varía (es fijo)</p>
+      </span>
+      <div id="porPix"></div>
+    </div>
+  </section>
+  <section>
+    <div class="title"><u>Tamaño relativos %%</u></div>
+    <div class="row">
+      <span>
+        <p>Ancho (width) relativo al padre: width: 25%</p>
+        <p>Su tamaño varía con el ancho del padre</p>
+      </span>
+      <div id="porPorcentaje"></div>
+    </div>
+  </section>
+  <section>
+    <div class="title"><u>Tamaño relativos "view"</u></div>
+    <div class="row">
+      <span>
+        <p>Ancho (width) relativo a la pantalla: width: 25vw</p>
+        <p>Su tamaño varía con el ancho de la pantalla</p>
+      </span>
+      <div id="porVW"></div>
+    </div>
+  </section>
+</body>
+</html>

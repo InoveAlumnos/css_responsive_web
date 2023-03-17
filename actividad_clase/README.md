@@ -9,6 +9,7 @@ Contarás con 5/10 minutos para realizar la actividad.
 - Dentro de la carpeta "css" ya cuenta con un archivo style.css con todos los estilos que necesitara.
 
 Si abre el index.html verá el siguiente resultado:
+
 ![inicio](inicio.jpg)
 
 - Modifique el "grid-template-areas" definido en el CSS para alcanzar el resultado deseado..
